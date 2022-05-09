@@ -1,3 +1,8 @@
+# Info
+Project build by NetBeans13  
+JDK 17.0.1  
+SDK 18  
+# SETUP DB
 IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='nhanVien' and xtype='U')  
 CREATE TABLE nhanVien (  
 maNV nvarchar(10) PRIMARY KEY,  
@@ -18,3 +23,4 @@ chucVu nvarchar(50) not null,
 luong float  
 )  
 GO  
+# Hoang200
