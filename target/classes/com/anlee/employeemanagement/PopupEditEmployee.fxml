@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="480.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.anlee.employeemanagement.PopupEditEmployeeController">
+   <children>
+      <Label layoutX="14.0" layoutY="90.0" text="Mã NV" />
+      <TextField fx:id="maNvField" disable="true" layoutX="76.0" layoutY="86.0" prefHeight="26.0" prefWidth="160.0" />
+      <Label layoutX="14.0" layoutY="132.0" text="Họ Tên" />
+      <TextField fx:id="nameField" layoutX="75.0" layoutY="128.0" prefHeight="26.0" prefWidth="160.0" />
+      <Label layoutX="14.0" layoutY="210.0" text="Email" />
+      <TextField fx:id="meowField" layoutX="76.0" layoutY="205.0" prefHeight="26.0" prefWidth="160.0" />
+      <Label layoutX="16.0" layoutY="248.0" text="Hệ Số Lương" />
+      <TextField fx:id="rateField" layoutX="119.0" layoutY="243.0" prefHeight="26.0" prefWidth="118.0" />
+      <Label layoutX="16.0" layoutY="286.0" text="Địa Chỉ" />
+      <TextField fx:id="addressField" layoutX="77.0" layoutY="281.0" prefHeight="26.0" prefWidth="159.0" />
+      <Label layoutX="15.0" layoutY="323.0" text="Giới Tính" />
+      <RadioButton fx:id="radioGenderMale" layoutX="77.0" layoutY="324.0" mnemonicParsing="false" selected="true" text="Nam" />
+      <RadioButton fx:id="radioGenderFemale" layoutX="135.0" layoutY="324.0" mnemonicParsing="false" text="Nữ" />
+      <RadioButton fx:id="radioGenderUnknown" layoutX="185.0" layoutY="324.0" mnemonicParsing="false" text="Khác" />
+      <Label layoutX="14.0" layoutY="172.0" text="SĐT" />
+      <TextField fx:id="phoneField" layoutX="75.0" layoutY="167.0" prefHeight="26.0" prefWidth="160.0" />
+      <Button fx:id="okBtn" layoutX="73.0" layoutY="431.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="104.0" text="OK" />
+      <Label fx:id="label" layoutX="35.0" layoutY="30.0" text="Sửa Thông Tin Nhân Viên">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="364.0" text="Chức Vụ" />
+      <ChoiceBox fx:id="choiceBoxChucVu" layoutX="74.0" layoutY="360.0" prefHeight="26.0" prefWidth="160.0" />
+   </children>
+</AnchorPane>

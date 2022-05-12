@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
@@ -9,12 +14,50 @@
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <AnchorPane fx:id="anchorPaneTable" layoutX="90.0" layoutY="174.0" prefHeight="443.0" prefWidth="920.0" style="-fx-background-color: PINK;" />
             <Label layoutX="426.0" layoutY="30.0" text="QUẢN LÝ NHÂN VIÊN">
                <font>
                   <Font name="System Bold Italic" size="24.0" />
                </font>
             </Label>
+            <Button fx:id="addEmployeeBtn" layoutX="390.0" layoutY="124.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="131.0" style="-fx-background-color: #7fef86;" text="Thêm Nhân Viên" textFill="#314032">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <TextField fx:id="searchField" layoutX="90.0" layoutY="125.0" prefHeight="26.0" prefWidth="253.0" promptText="Search" />
+            <Button fx:id="resetBtn" layoutX="674.0" layoutY="124.0" mnemonicParsing="false" onAction="#showDialogThemNhanVien" prefHeight="27.0" prefWidth="55.0" style="-fx-background-color: #7fef86;" text="Reset" textFill="#314032">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <TabPane layoutX="90.0" layoutY="167.0" prefHeight="440.0" prefWidth="920.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab fx:id="tabPaneEployee" text="DS Nhân Viên">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  </content>
+                </Tab>
+                <Tab fx:id="tabPaneChucVu" text="DS Chức Vụ">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+            <Button fx:id="addChucVuBtn" layoutX="541.0" layoutY="124.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="114.0" style="-fx-background-color: #7fef86;" text="Thêm Chức Vụ" textFill="#314032">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
          </children>
       </AnchorPane>
    </center>

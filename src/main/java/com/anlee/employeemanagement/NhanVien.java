@@ -11,7 +11,7 @@ import java.util.Date;
 public class NhanVien {
 
     private String maNV;
-    private String ten;
+    private String hoTen;
     private ChucVu chucVu;
     private String gioiTinh;
     private String email;
@@ -23,9 +23,9 @@ public class NhanVien {
     public NhanVien() {
     }
 
-    public NhanVien(String maNV, String ten, ChucVu chucVu, String gioiTinh, String email, String sdt, String diaChi, Date ngayVaoLam, double heSoLuong) {
+    public NhanVien(String maNV, String hoTen, ChucVu chucVu, String gioiTinh, String email, String sdt, String diaChi, Date ngayVaoLam, double heSoLuong) {
         this.maNV = maNV;
-        this.ten = ten;
+        this.hoTen = hoTen;
         this.chucVu = chucVu;
         this.gioiTinh = gioiTinh;
         this.email = email;
@@ -34,6 +34,20 @@ public class NhanVien {
         this.ngayVaoLam = ngayVaoLam;
         this.heSoLuong = heSoLuong;
     }
+    
+    public NhanVien(String maNV, String hoTen, ChucVu chucVu, String gioiTinh, String email, String sdt, String diaChi, String ngayVaoLam, double heSoLuong) {
+        this.maNV = maNV;
+        this.hoTen = hoTen;
+        this.chucVu = chucVu;
+        this.gioiTinh = gioiTinh;
+        this.email = email;
+        this.sdt = sdt;
+        this.diaChi = diaChi;
+        this.setNgayVaoLam(ngayVaoLam);
+        this.heSoLuong = heSoLuong;
+    }
+    
+    
 
     public double getHeSoLuong() {
         return heSoLuong;
@@ -51,19 +65,28 @@ public class NhanVien {
         this.gioiTinh = gioiTinh;
     }
 
+    public String getMaNV() {
+        return maNV;
+    }
+
     public void setMaNV(String maNV) {
         this.maNV = maNV;
     }
 
-    public String getTen() {
-        return ten;
+
+    public String getHoTen() {
+        return hoTen;
     }
 
-    public void setTen(String ten) {
-        this.ten = ten;
+    public void setHoTen(String hoTen) {
+        this.hoTen = hoTen;
     }
 
-    public ChucVu getChucVu() {
+    public String getChucVu() {
+        return chucVu.getChucVu();
+    }
+    
+    public ChucVu getChucVuObj() {
         return chucVu;
     }
 
@@ -107,6 +130,10 @@ public class NhanVien {
         } catch (ParseException ex) {
             this.ngayVaoLam = null;
         }
+    }
+    
+    public void setNgayVaoLamDate(Date ngayVaoLam) {
+        this.ngayVaoLam = ngayVaoLam;
     }
 
 }

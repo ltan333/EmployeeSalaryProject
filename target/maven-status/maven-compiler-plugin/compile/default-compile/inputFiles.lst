@@ -1,5 +1,13 @@
 D:\Data\Java_Netbeans\EmployeeManagement\src\main\java\com\anlee\employeemanagement\ChucVu.java
-D:\Data\Java_Netbeans\EmployeeManagement\src\main\java\com\anlee\employeemanagement\MainSceneController.java
-D:\Data\Java_Netbeans\EmployeeManagement\src\main\java\com\anlee\employeemanagement\Main.java
+D:\Data\Java_Netbeans\EmployeeManagement\src\main\java\com\anlee\employeemanagement\PopupEditEmployeeController.java
 D:\Data\Java_Netbeans\EmployeeManagement\src\main\java\com\anlee\employeemanagement\NhanVien.java
 D:\Data\Java_Netbeans\EmployeeManagement\src\main\java\module-info.java
+D:\Data\Java_Netbeans\EmployeeManagement\src\main\java\com\anlee\employeemanagement\PopupAddEmployeeController.java
+D:\Data\Java_Netbeans\EmployeeManagement\src\main\java\com\anlee\employeemanagement\DatabaseHandle.java
+D:\Data\Java_Netbeans\EmployeeManagement\src\main\java\com\anlee\employeemanagement\InputValidation.java
+D:\Data\Java_Netbeans\EmployeeManagement\src\main\java\com\anlee\employeemanagement\PopupEditChucVuController.java
+D:\Data\Java_Netbeans\EmployeeManagement\src\main\java\com\anlee\employeemanagement\PopupAddChucVuController.java
+D:\Data\Java_Netbeans\EmployeeManagement\src\main\java\com\anlee\employeemanagement\CreateMessBox.java
+D:\Data\Java_Netbeans\EmployeeManagement\src\main\java\com\anlee\employeemanagement\MainSceneController.java
+D:\Data\Java_Netbeans\EmployeeManagement\src\main\java\com\anlee\employeemanagement\Main.java
+D:\Data\Java_Netbeans\EmployeeManagement\src\main\java\com\anlee\employeemanagement\DataModel.java

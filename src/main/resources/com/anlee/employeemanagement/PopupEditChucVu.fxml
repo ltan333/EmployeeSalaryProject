@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="283.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.anlee.employeemanagement.PopupEditChucVuController">
+   <children>
+      <Label layoutX="14.0" layoutY="90.0" text="Mã Chức Vụ" />
+      <TextField fx:id="maChucVuField" disable="true" layoutX="95.0" layoutY="86.0" prefHeight="26.0" prefWidth="141.0" />
+      <Label layoutX="14.0" layoutY="132.0" text="Chức Vụ" />
+      <TextField fx:id="chucVuField" layoutX="93.0" layoutY="128.0" prefHeight="26.0" prefWidth="142.0" />
+      <Label layoutX="14.0" layoutY="172.0" text="Lương" />
+      <TextField fx:id="salaryField" layoutX="93.0" layoutY="167.0" prefHeight="26.0" prefWidth="104.0" />
+      <Button fx:id="okBtn" layoutX="73.0" layoutY="228.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="104.0" text="OK" />
+      <Label fx:id="label" layoutX="73.0" layoutY="30.0" text="Thêm Chức Vụ">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="201.0" layoutY="172.0" text="VNĐ" />
+   </children>
+</AnchorPane>
